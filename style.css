@@ -6,8 +6,16 @@
     margin-left: -100px;
 }
 
+#nametitle{
+    z-index:1;
+}
+
 body {
     background-color: black;
+}
+
+.cat {
+    color:white
 }
 
 a {

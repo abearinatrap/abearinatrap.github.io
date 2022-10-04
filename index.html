@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yeah</title>
+    <title>Andrew</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro">
     <link rel="stylesheet" href="style.css">
+    <script> 
+        function delay(time) {
+            return new Promise(resolve => setTimeout(resolve, time));
+        }
+        
+        function flip(){
+            let a=document.getElementById("cat1"),b=document.getElementById("cat2");
+            if(a.style.display=="block"){a.style.display="none";}else{a.style.display="block";}
+            if(b.style.display=="block"){b.style.display="none";}else{b.style.display="block";}
+        }
+        setInterval(function() { 
+            flip();
+            delay(300).then(() => flip());
+        }, 3000);
+    </script>
 </head>
 <body>
-    <div class="centered">
+    <div id="nametitle" class="centered">
         <a href="https://www.linkedin.com/in/andrewrenninger/">andrew</a> <a href="https://www.github.com/abearinatrap/">renninger</a>
+    </div>
+    
+    <div class="centered cat">
+            <pre id="cat1" style="display: none;">
+
+      /\_/\  (
+     ( ^.^ ) _)
+       \"/  (
+     ( | | )
+    (__d b__)
+           </pre>
+            <pre id="cat2" style="display: block;">
+
+      /\_/\  (
+     ( 0.0 ) _)
+       \"/  (
+     ( | | )
+    (__d b__)
+            </pre>
     </div>
 </body>
 </html>
