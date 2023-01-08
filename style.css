@@ -1,12 +1,21 @@
 .centered {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
+    top: 40%;
+    left: 40%;
+    display: block;
+}
+
+#description{
+    display: block;
+    inline-size: 150px;
+    overflow-wrap: break-word;
+    /*
     margin-left: -100px;
+    */
 }
 
 #nametitle{
+    display: block;
     z-index:1;
 }
 
@@ -14,11 +23,17 @@ body {
     background-color: black;
 }
 
-.cat {
+#maincontent{
+    vertical-align: middle;
+    
+}
+
+#cat {
+    display:block;
     color:white
 }
 
-a {
+a ,p{
     color: white;
     font-family: 'Source Code Pro', sans-serif;
 }
